@@ -8,8 +8,8 @@ services:
     #   - ../.development.env
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: example
-      POSTGRES_DB: restaurantdb
+      POSTGRES_PASSWORD: nnl;ads1231
+      POSTGRES_DB: hoteldb
    volumes:
      - ../db:/var/lib/postgresql/data/
      - ./postgresql.conf:/var/lib/postgresql/data/postgresql.conf
