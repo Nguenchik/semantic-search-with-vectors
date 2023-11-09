@@ -1,4 +1,4 @@
-## Semantic search with using vectors (aplha)
+## Semantic search with using vectors (alpha)
 
 Semantic search seeks to improve search accuracy by understanding the content of the search query. In contrast to traditional search engines which only find based on lexical matches, semantic search can also find synonyms.
 
