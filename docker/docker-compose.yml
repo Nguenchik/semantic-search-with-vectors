@@ -1,0 +1,23 @@
+version: '3.1'
+
+services:
+  db:
+    container_name: db
+    image: postgres:14
+    # env_file:
+    #   - ../.development.env
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: restaurantdb
+   volumes:
+     - ../db:/var/lib/postgresql/data/
+     - ./postgresql.conf:/var/lib/postgresql/data/postgresql.conf
+     - ./pg_hba.conf:/var/lib/postgresql/data/pg_hba.conf
+    ports:
+      - 5432:5432
+    restart: always
+    networks: 
+      - app-network
+networks: 
+  app-network:
